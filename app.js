@@ -56,3 +56,26 @@ updateVolume(volume);
 });
 
 window.addEventListener('beforeunload', stopAllSounds);
+
+// Check if system prefers dark mode
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Toggle dark mode
+function toggleDarkMode() {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark-mode');
+}
+
+// Set initial mode based on system preference
+if (prefersDark) {
+  toggleDarkMode();
+}
+
+// Watch for changes in system preference
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+  if (event.matches) {
+    toggleDarkMode();
+  } else {
+    toggleDarkMode();
+  }
+});
