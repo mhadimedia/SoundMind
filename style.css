@@ -43,6 +43,66 @@ main {
   margin-bottom: 10px;
 }
 
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Dark mode styles for input elements */
+.dark-mode input[type="range"]::-webkit-slider-thumb {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode input[type="range"]::-moz-range-thumb {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode input[type="checkbox"]:checked + .slider {
+  background-color: #fff;
+}
+
+/* Dark mode styles for buttons */
+.dark-mode .btn {
+  background-color: #fff;
+  color: #222;
+  box-shadow: none;
+}
+
+/* Dark mode styles for navbar */
+.dark-mode .navbar {
+  background-color: #222;
+}
+
+.dark-mode .navbar-brand {
+  color: #fff;
+}
+
+.dark-mode .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.dark-mode .navbar-nav .nav-link.active {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Dark mode styles for audio controls */
+.dark-mode .audio-controls .btn {
+  color: #fff;
+}
+
+.dark-mode .audio-controls input[type="range"]::-webkit-slider-thumb {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .audio-controls input[type="range"]::-moz-range-thumb {
+  background-color: #fff;
+  border-color: #fff;
+}
 .sound-card .slider-container {
   margin-bottom: 20px;
 }
