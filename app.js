@@ -79,3 +79,38 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     toggleDarkMode();
   }
 });
+
+// Add animations to elements with the "animated" class
+const animatedElements = document.querySelectorAll('.animated');
+animatedElements.forEach(element => {
+  element.style.opacity = 0;
+  element.style.transform = 'translateY(-50%)';
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate__animated', 'animate__slideInUp');
+    } else {
+      entry.target.classList.remove('animate__animated', 'animate__slideInUp');
+    }
+  });
+});
+
+animatedElements.forEach(element => {
+  observer.observe(element);
+});
+
+// Toggle dark mode based on system preferences
+const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (prefersDarkMode) {
+  document.body.classList.add('dark-mode');
+}
+
+const toggleDarkMode = () => {
+  document.body.classList.toggle('dark-mode');
+}
+
+const darkModeButton = document.querySelector('#dark-mode-toggle');
+darkModeButton.addEventListener('click', toggleDarkMode);
