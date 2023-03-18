@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sounds,
+
+.tunes {
+margin-bottom: 30px;
+}
+
+h2 {
+font-size: 24px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.sound-row {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.sound-button {
+background-color: #2196f3;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.sound-button:hover {
+background-color: #0d8ae7;
+}
+
+.sound-slider {
+width: 100px;
+margin-left: auto;
+}
+
+.controls {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#play-btn, #stop-btn {
+background-color: #2196f3;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+#play-btn:hover, #stop-btn:hover {
+background-color: #0d8ae7;
+}
+
+#volume-slider {
+width: 150px;
+margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+h1 {
+font-size: 36px;
+}
+
+h2 {
+font-size: 20px;
+}
+
+.sound-button {
+padding: 8px 16px;
+font-size: 14px;
+margin-right: 5px;
+}
+
+.sound-slider {
+width: 60px;
+}
+
+#play-btn, #stop-btn {
+padding: 8px 16px;
+font-size: 14px;
+margin-right: 5px;
+}
+
+#volume-slider {
+width: 100px;
+}
+}
