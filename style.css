@@ -1,263 +1,275 @@
 /* Body styles */
 body {
-  background-color: #f5f5f5;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+font-family: "Roboto", sans-serif;
+margin: 0;
+background-color: #f5f5f5;
+transition: background-color 0.2s ease-in-out;
 }
 
 /* Header styles */
 header {
-  background-color: #444;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #444;
+color: #fff;
 }
 
 header h1 {
-  font-size: 32px;
-  margin: 0;
+font-size: 32px;
+margin: 0;
 }
 
 /* Main styles */
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 20px;
 }
 
 /* Sound card styles */
 .sound-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-  width: 48%;
+width: 48%;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
 }
 
 .sound-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+font-size: 24px;
+margin-bottom: 10px;
 }
 
-/* Dark mode styles */
-.dark-mode {
-  background-color: #1a1a1a;
-  color: #fff;
-}
-
-/* Dark mode styles for input elements */
-.dark-mode input[type="range"]::-webkit-slider-thumb {
-  background-color: #fff;
-  border-color: #fff;
-}
-
-.dark-mode input[type="range"]::-moz-range-thumb {
-  background-color: #fff;
-  border-color: #fff;
-}
-
-.dark-mode input[type="checkbox"]:checked + .slider {
-  background-color: #fff;
-}
-
-/* Dark mode styles for buttons */
-.dark-mode .btn {
-  background-color: #fff;
-  color: #222;
-  box-shadow: none;
-}
-
-/* Dark mode styles for navbar */
-.dark-mode .navbar {
-  background-color: #222;
-}
-
-.dark-mode .navbar-brand {
-  color: #fff;
-}
-
-.dark-mode .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.dark-mode .navbar-nav .nav-link.active {
-  background-color: #fff;
-  color: #222;
-}
-
-/* Dark mode styles for audio controls */
-.dark-mode .audio-controls .btn {
-  color: #fff;
-}
-
-.dark-mode .audio-controls input[type="range"]::-webkit-slider-thumb {
-  background-color: #fff;
-  border-color: #fff;
-}
-
-.dark-mode .audio-controls input[type="range"]::-moz-range-thumb {
-  background-color: #fff;
-  border-color: #fff;
-}
 .sound-card .slider-container {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .sound-card label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
+font-size: 16px;
+display: block;
+margin-bottom: 10px;
 }
 
 .sound-card audio {
-  width: 100%;
+width: 100%;
 }
 
 /* Tune card styles */
 .tune-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-  width: 48%;
+width: 48%;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
 }
 
 .tune-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+font-size: 24px;
+margin-bottom: 10px;
 }
 
 .tune-card label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
+font-size: 16px;
+display: block;
+margin-bottom: 10px;
 }
 
 .tune-card audio {
-  width: 100%;
+width: 100%;
 }
 
 /* Button styles */
 button {
-  background-color: #444;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px;
-  transition: all 0.3s ease;
+padding: 10px;
+font-size: 16px;
+background-color: #444;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #333;
+background-color: #333;
 }
 
-/* Mobile First */
-html {
-  font-size: 16px;
+/* Dark mode styles */
+.dark-mode {
+background-color: #1a1a1a;
+color: #fff;
+}
+
+.dark-mode .btn {
+background-color: #fff;
+color: #222;
+box-shadow: none;
+}
+
+.dark-mode .navbar {
+background-color: #222;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .navbar-nav .nav-link.active {
+color: #fff;
+}
+
+.dark-mode .navbar-nav .nav-link {
+color: #fff;
+}
+
+.dark-mode input[type="range"]::-webkit-slider-thumb,
+.dark-mode input[type="range"]::-moz-range-thumb,
+.dark-mode input[type="checkbox"]:checked + .slider,
+.dark-mode .audio-controls input[type="range"]::-webkit-slider-thumb,
+.dark-mode .audio-controls input[type="range"]::-moz-range-thumb {
+background-color: #fff;
+border-color: #fff;
+}
+
+.dark-mode .audio-controls .btn,
+.dark-mode .audio-controls input[type="range"]::-webkit-slider-thumb,
+.dark-mode .audio-controls input[type="range"]::-moz-range-thumb {
+color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
+/* Increase font size for larger screens */
+html {
+font-size: 18px;
+}
+
+/* Increase padding for main container */
+.container {
+padding: 3rem;
+}
+
+/* Adjust sound and tune card widths for larger screens */
+.sound-card,
+.tune-card {
+width: 31.3%;
+}
 }
 
 @media only screen and (min-width: 992px) {
-  html {
-    font-size: 20px;
-  }
+/* Increase font size for larger screens */
+html {
+font-size: 20px;
+}
+
+/* Increase padding for main container */
+.container {
+padding: 4rem;
+}
+
+/* Adjust sound and tune card widths for larger screens */
+.sound-card,
+.tune-card {
+width: 23%;
+}
 }
 
 @media only screen and (min-width: 1200px) {
-  html {
-    font-size: 22px;
-  }
+/* Increase font size for larger screens */
+html {
+font-size: 22px;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-  background-color: #fff;
-  transition: background-color 0.2s ease-in-out;
-}
-
-h1, h2 {
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
+/* Increase padding for main container */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+padding: 5rem;
 }
 
-.options-container, .controls-container {
-  margin-bottom: 2rem;
+/* Adjust sound and tune card widths for larger screens */
+.sound-card,
+.tune-card {
+width: 20%;
+}
 }
 
-.option, .control {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+/* Responsive Images */
+img {
+max-width: 100%;
+height: auto;
 }
 
-.option label, .control label {
-  flex: 1;
-  margin-right: 1rem;
+/* Links */
+a {
+color: #444;
+text-decoration: none;
 }
 
-.option input[type=range], .control input[type=range] {
-  flex: 2;
+a:hover {
+color: #333;
 }
 
-.credits-container {
-  text-align: center;
-  margin-top: 2rem;
+/* Improve contrast of disabled elements */
+[disabled] {
+opacity: 0.5;
+cursor: not-allowed;
 }
 
-.dark-mode {
-  background-color: #333;
-  color: #fff;
+/* Improve accessibility of form elements */
+input[type="checkbox"],
+input[type="radio"] {
+position: absolute;
+opacity: 0;
+pointer-events: none;
 }
 
-/* Animations */
-@keyframes slideIn {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+/* Add custom styles to form elements */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+display: inline-block;
+font-size: 16px;
+line-height: 1.2;
+margin-right: 10px;
+cursor: pointer;
 }
 
-.animated {
-  animation-name: slideIn;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+content: "";
+display: inline-block;
+width: 16px;
+height: 16px;
+border-radius: 3px;
+border: 2px solid #ccc;
+margin-right: 5px;
+vertical-align: middle;
+cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+background-color: #444;
+border-color: #444;
+}
+
+/* Add a slide-in animation to the audio controls */
+.audio-controls {
+animation: slideIn 0.5s ease-in-out;
+}
+
+/* Add a pulse animation to the play button */
+.play-btn:hover:before {
+animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
 }
