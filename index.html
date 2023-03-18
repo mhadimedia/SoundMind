@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>SoundMind</title>
   </head>
   <body>
@@ -53,7 +50,7 @@
             <button class="btn audio-btn" data-audio="ocean-waves">Play</button>
             <div class="volume-control">
               <label for="ocean-waves-volume">Volume:</label>
-              <input type="range" id="ocean-waves-volume" name="ocean-waves-volume" min="0" max="1" step="0.1" value="0.5" />
+              <input type="range" id="ocean-waves-volume" name="ocean-waves-volume" min="0" max="1" step="0.1" value="0.5">
             </div>
           </div>
           <div class="audio-control">
@@ -62,63 +59,29 @@
             <button class="btn audio-btn" data-audio="rainforest">Play</button>
             <div class="volume-control">
               <label for="rainforest-volume">Volume:</label>
-              <input type="range" id="rainforest-volume" name="rainforest-volume" min="0" max="1" step="0.
-    </div>
-  </div>
-</section>
-
-<section id="concentration-tunes" class="sounds-section">
-  <div class="container">
-    <h2 class="sounds-section-title">Concentration Tunes</h2>
-    <div class="audio-controls">
-      <div class="audio-control">
-        <h3 class="audio-title">Study Music</h3>
-        <audio id="study-music" src="audio/study-music.mp3" preload="auto"></audio>
-        <button class="btn audio-btn" data-audio="study-music">Play</button>
-        <div class="volume-control">
-          <label for="study-music-volume">Volume:</label>
-          <input type="range" id="study-music-volume" name="study-music-volume" min="0" max="1" step="0.1" value="0.5" />
+              <input type="range" id="rainforest-volume" name="rainforest-volume" min="0" max="1" step="0.1" value="0.5">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="audio-control">
-        <h3 class="audio-title">Classical Music</h3>
-        <audio id="classical-music" src="audio/classical-music.mp3" preload="auto"></audio>
-        <button class="btn audio-btn" data-audio="classical-music">Play</button>
-        <div class="volume-control">
-          <label for="classical-music-volume">Volume:</label>
-          <input type="range" id="classical-music-volume" name="classical-music-volume" min="0" max="1" step="0.1" value="0.5" />
-        </div>
-      </div>
-    </div>
+    </section>
+
+    <section id="concentration-tunes" class="sounds-section">
+      <div class="
+="finder-control">
+<h3 class="finder-title">Amplitude:</h3>
+<input type="range" id="amplitude" name="amplitude" min="0" max="1" step="0.1" value="0.5" />
+</div>
+<button class="btn finder-btn">Play Sound</button>
+</div>
+
   </div>
 </section>
-
-<section id="sound-finder" class="sounds-section">
-  <div class="container">
-    <h2 class="sounds-section-title">Sound Finder</h2>
-    <div class="finder-controls">
-      <div class="finder-control">
-        <h3 class="finder-title">Frequency:</h3>
-        <input type="range" id="frequency" name="frequency" min="20" max="20000" step="10" value="5000" />
-      </div>
-      <div class="finder-control">
-        <h3 class="finder-title">Duration:</h3>
-        <input type="range" id="duration" name="duration" min="0.5" max="10" step="0.5" value="2.5" />
-      </div>
-      <div class="finder-control">
-        <h3 class="finder-title">Volume:</h3>
-        <input type="range" id="volume" name="volume" min="0" max="1" step="0.1" value="0.5" />
-      </div>
-      <button class="btn finder-btn">Play Sound</button>
-    </div>
-  </div>
-</section>
-
 <footer class="footer">
   <div class="container">
-    <p>&copy; 2023 SoundMind. All rights reserved.</p>
+    <p>&copy; 2023 SoundMind</p>
   </div>
 </footer>
-                        
+<script src="script.js"></script>
   </body>
 </html>
